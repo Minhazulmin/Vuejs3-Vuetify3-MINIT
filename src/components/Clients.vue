@@ -1,6 +1,6 @@
-<template id="clients">
+<template id="clients" class="mt-10 mb-5">
   <v-container>
-    <h2>Our Happy Clients</h2>
+    <h2 class="minit-title">Our Happy Clients</h2>
     <v-row>
       <v-col md="5">
         <v-banner
@@ -105,5 +105,10 @@
   letter-spacing: 1px;
   line-height: 40px;
   padding: 15px;
+}
+.minit-title {
+  color: #242020;
+  font-size: 50px;
+  font-weight: bold;
 }
 </style>

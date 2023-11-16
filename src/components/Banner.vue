@@ -1,5 +1,5 @@
 <template>
-  <v-container id="home">
+  <v-container id="home" class="mt-10 mb-5">
     <v-row>
       <v-col cols="12" md="12">
         <v-sheet>
@@ -19,14 +19,21 @@
                 complexities and maximizing efficiency in the world of
                 technology.
               </p>
+
+              <v-btn size="x-large" color="#000" class="ms-5 mt-10"
+                >Get Start</v-btn
+              >
+              <v-btn size="x-large" color="#ee1f3f" class="ms-5 mt-10"
+                >Explore More</v-btn
+              >
             </v-col>
             <v-col cols="12" class="py-5" md="4">
               <v-img
-                :width="1200"
+                :width="500"
                 aspect-ratio="16/9"
                 class="float-right"
                 cover
-                src="https://i.postimg.cc/fbFwVtYY/web-design.gif"
+                src="https://i.postimg.cc/7ZWT1NzR/web-design.gif"
               ></v-img>
             </v-col>
           </v-row>
@@ -63,6 +70,6 @@
   padding: 29px;
 }
 .minit-row-color {
-  background: #f3f5f9;
+  background: #fcfefc;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <v-container id="services">
-    <h2>All About Services</h2>
+  <v-container id="services" class="mt-10 mb-5">
+    <h2 class="minit-title">All About Services</h2>
     <v-row>
       <v-col v-for="(service, index) in 8" :key="index" md="3">
         <v-card :loading="loading" class="mx-auto my-12" max-width="374">
@@ -101,3 +101,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+.minit-title {
+  color: #242020;
+  font-size: 50px;
+  font-weight: bold;
+}
+</style>

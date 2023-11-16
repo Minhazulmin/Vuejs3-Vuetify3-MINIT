@@ -1,7 +1,7 @@
 <template>
-  <v-container id="portfolio">
+  <v-container id="portfolio" class="mt-10 mb-5">
+    <h2 class="minit-title">Project Portfolio</h2>
     <v-card>
-      <v-card-title> <h2>Project Portfolio</h2></v-card-title>
       <v-tabs v-model="tab" color="deep-purple-accent-4" align-tabs="center">
         <v-tab :value="1">Landscape</v-tab>
         <v-tab :value="2">City</v-tab>
@@ -37,3 +37,10 @@ export default {
   }),
 };
 </script>
+<style scoped>
+.minit-title {
+  color: #242020;
+  font-size: 50px;
+  font-weight: bold;
+}
+</style>

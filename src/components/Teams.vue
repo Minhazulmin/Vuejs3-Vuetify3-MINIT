@@ -1,6 +1,6 @@
 <template>
-  <v-container id="teams">
-    <h2>Our Development Team</h2>
+  <v-container id="teams" class="mt-10 mb-5">
+    <h2 class="minit-title">Our Development Team</h2>
     <v-row>
       <v-col md="7">
         <v-row>
@@ -50,5 +50,10 @@
   letter-spacing: 1px;
   line-height: 40px;
   padding: 15px;
+}
+.minit-title {
+  color: #242020;
+  font-size: 50px;
+  font-weight: bold;
 }
 </style>

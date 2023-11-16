@@ -18,6 +18,15 @@
             </v-row>
           </template>
         </v-img>
+        <v-card
+          max-width="600"
+          title="Vuetify on GitHub"
+          prepend-icon="mdi-github"
+          append-icon="mdi-open-in-new"
+          href="https://github.com/minhazulmin"
+          target="_blank"
+          rel="noopener"
+        ></v-card>
       </v-col>
       <v-col md="8">
         <h2>
@@ -58,12 +67,11 @@
           Server ,Micro-Service,Docker,Postmant, MySQL ,Photoshop cc ,
           illustrator cc ,Figma
         </v-alert>
-
-        <v-alert class="mt-5 p-text" elevation="2" color="white">
-          <b>Payment Gateway </b><br />
-          Paypal,Stripe, SSL Ecommerce, Bkash ,Nogod and more.
-        </v-alert>
       </v-col>
+      <v-alert class="p-text" elevation="2" color="white">
+        <b>Payment Gateway </b><br />
+        Paypal,Stripe, SSL Ecommerce, Bkash ,Nogod and more.
+      </v-alert>
     </v-row>
   </v-container>
 </template>

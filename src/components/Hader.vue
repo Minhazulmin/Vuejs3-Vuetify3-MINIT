@@ -19,7 +19,7 @@
               :width="150"
               aspect-ratio="16/9"
               cover
-              src="/src/assets/MIN-IT-PNG.png"
+              src="https://i.postimg.cc/FRdHpghP/MIN-IT-PNG.png"
             ></v-img>
           </router-link>
         </v-toolbar-title>

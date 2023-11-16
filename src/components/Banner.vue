@@ -26,7 +26,7 @@
                 aspect-ratio="16/9"
                 class="float-right"
                 cover
-                src="/src/assets/web_design.gif"
+                src="https://i.postimg.cc/fbFwVtYY/web-design.gif"
               ></v-img>
             </v-col>
           </v-row>

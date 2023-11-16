@@ -20,7 +20,7 @@
         </v-img>
         <v-card
           max-width="600"
-          title="Vuetify on GitHub"
+          title="MinhazulMin on GitHub"
           prepend-icon="mdi-github"
           append-icon="mdi-open-in-new"
           href="https://github.com/minhazulmin"

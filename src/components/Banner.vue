@@ -1,5 +1,5 @@
 <template>
-  <v-container id="home" class="mt-10 mb-5">
+  <v-container id="home" class="mt-10">
     <v-row>
       <v-col cols="12" md="12">
         <v-sheet>
@@ -20,17 +20,28 @@
                 technology.
               </p>
 
-              <v-btn size="x-large" color="#000" class="ms-5 mt-10"
-                >Get Start</v-btn
+              <v-btn
+                size="x-large"
+                prepend-icon="mdi-check-circle"
+                rounded="xl"
+                color="#000"
+                class="ms-5 mt-10"
+                >Get Start with Min it</v-btn
               >
-              <v-btn size="x-large" color="#ee1f3f" class="ms-5 mt-10"
+              <v-btn
+                size="x-large"
+                rounded="xl"
+                color="#ee1f3f"
+                class="ms-5 mt-10"
+                prepend-icon="mdi-github"
+                append-icon="mdi-open-in-new"
                 >Explore More</v-btn
               >
             </v-col>
             <v-col cols="12" class="py-5" md="4">
               <v-img
-                :width="500"
-                aspect-ratio="16/9"
+                :width="1500"
+                aspect-ratio="20/15"
                 class="float-right"
                 cover
                 src="https://i.postimg.cc/Hkbq3LJC/web-design.gif"
@@ -44,7 +55,7 @@
 </template>
 <style scoped>
 .title {
-  font-size: 45px;
+  font-size: 55px;
   line-height: 1.25;
   font-weight: 700;
   margin: 0 auto;
@@ -70,6 +81,8 @@
   padding: 29px;
 }
 .minit-row-color {
-  background: #fcfefc;
+  background: #fdfdff;
+  /* background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff); */
+  height: 700px !important;
 }
 </style>

@@ -2,9 +2,10 @@
   <v-container id="about">
     <v-row>
       <v-col md="4">
+        <!-- https://i.postimg.cc/63mckTY3/MIN-IT-ILLUSTRATION-WHITE.jpg -->
         <v-img
-          :src="`https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/308915603_4792073834229626_3050355851750134857_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=J1vvFI0v2j4AX_Vh6io&_nc_ht=scontent.fdac99-1.fna&oh=00_AfD8qfoQPi-F7tf3c3FqltxkQDbwqrlsR8OsoeVqC5RjUQ&oe=655A6F99`"
-          :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+          :src="`https://i.postimg.cc/nzYqnrFZ/MIN-IT-ILLUSTRATION-BLACK.jpg`"
+          :lazy-src="`https://picsum.photos/10/6?image=${5 * 5 + 10}`"
           cover
           elevation="6"
           class="bg-grey-lighten-2 shadow"
@@ -20,7 +21,7 @@
         </v-img>
         <v-card
           max-width="600"
-          title="Minhazul Min on GitHub"
+          title="MIN IT ON GITHUB"
           prepend-icon="mdi-github"
           append-icon="mdi-open-in-new"
           href="https://github.com/minhazulmin"
@@ -58,7 +59,16 @@
           tasks, iterate fast and deliver faster. If you're interested in
           working with us, don't hesitate to hire contact with us.
         </v-alert>
-
+      </v-col>
+      <v-col md="12">
+        <v-alert class="p-text" elevation="2" color="white">
+          <b>Programming Languages and other tools that we are use in past</b
+          ><br />
+          Rest API ,PHP Laravel , Vue.js , Nuxt.js , Ajax , JavaScript ,
+          Bootstrap 5 , HTML 5 , CSS 3 , JQuery , Github , Gitlab , cPanel , VPS
+          Server ,Micro-Service,Docker,Postmant, MySQL ,Photoshop cc ,
+          illustrator cc ,Figma
+        </v-alert>
         <v-alert class="mt-5 p-text" elevation="2" color="white">
           <b>Programming Languages and other tools that we are use in past</b
           ><br />
@@ -67,11 +77,11 @@
           Server ,Micro-Service,Docker,Postmant, MySQL ,Photoshop cc ,
           illustrator cc ,Figma
         </v-alert>
+        <v-alert class="mt-5 p-text" elevation="2" color="white">
+          <b>Payment Gateway </b><br />
+          Paypal,Stripe, SSL Ecommerce, Bkash ,Nogod and more.
+        </v-alert>
       </v-col>
-      <v-alert class="p-text" elevation="2" color="white">
-        <b>Payment Gateway </b><br />
-        Paypal,Stripe, SSL Ecommerce, Bkash ,Nogod and more.
-      </v-alert>
     </v-row>
   </v-container>
 </template>
@@ -83,7 +93,7 @@ export default {};
   /* background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
    */
   /* background: -webkit-linear-gradient(315deg, #ee1f3f 25%, #ee1f3f); */
-  background: -webkit-linear-gradient(315deg, #040a0d 25%, #041e2b);
+  background: -webkit-linear-gradient(315deg, #ee1f3f 25%, #041e2b);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

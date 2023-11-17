@@ -3,9 +3,9 @@
     <h2 class="minit-title">Project Portfolio</h2>
     <v-card>
       <v-tabs v-model="tab" color="deep-purple-accent-4" align-tabs="center">
-        <v-tab :value="1">Landscape</v-tab>
-        <v-tab :value="2">City</v-tab>
-        <v-tab :value="3">Abstract</v-tab>
+        <v-tab :value="1">SOFTWARE DEVELOPMENT</v-tab>
+        <v-tab :value="2">WENSITE DEVELOPMENT</v-tab>
+        <v-tab :value="3">OTHER SERVICES</v-tab>
       </v-tabs>
       <v-window v-model="tab">
         <v-window-item v-for="n in 3" :key="n" :value="n">

@@ -33,7 +33,7 @@
                 aspect-ratio="16/9"
                 class="float-right"
                 cover
-                src="https://i.postimg.cc/7ZWT1NzR/web-design.gif"
+                src="https://i.postimg.cc/Hkbq3LJC/web-design.gif"
               ></v-img>
             </v-col>
           </v-row>

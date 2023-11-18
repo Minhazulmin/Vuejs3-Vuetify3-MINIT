@@ -10,9 +10,9 @@
       <v-window v-model="tab">
         <v-window-item v-for="n in 3" :key="n" :value="n">
           <v-row>
-            <v-col v-for="i in 12" :key="i" md="3">
+            <v-col v-for="(portfolio, i) in portfolios" :key="i" md="3">
               <v-img
-                :src="`https://picsum.photos/500/300?image=${i * n * 5 + 10}`"
+                :src="portfolio.image"
                 :lazy-src="`https://picsum.photos/10/6?image=${i * n * 5 + 10}`"
                 aspect-ratio="1/2"
               ></v-img>
@@ -34,6 +34,24 @@ const tab = ref(null);
 export default {
   data: () => ({
     tab: null,
+    portfolios: [
+      {
+        image:
+          "https://s3-alpha.figma.com/hub/file/1083321664/2347ee8a-3d18-47aa-82e1-212ed1547beb-cover.png",
+      },
+      {
+        image:
+          "https://themeforest.img.customer.envatousercontent.com/files/463553935/Preview/02.Home_Two%28Online_Courses%29.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=54b14ae8e2984a071d584c8e44d0621b",
+      },
+      {
+        image:
+          "https://s3-alpha.figma.com/hub/file/3014355850/f15b13d8-a3e9-44b6-830e-33712a7134aa-cover.png",
+      },
+      {
+        image:
+          "https://themeforest.img.customer.envatousercontent.com/files/410978908/03_home_02.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=1dde4a4b8d7b8ea22c3376001f9af56f",
+      },
+    ],
   }),
 };
 </script>

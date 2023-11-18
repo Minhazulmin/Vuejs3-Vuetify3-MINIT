@@ -1,6 +1,23 @@
 <template>
   <v-container id="about">
     <v-row>
+      <v-col md="12">
+        <h2 class="minit-title">
+          <b> ALL ABOUT <span class="minit-color">MIN IT</span> </b>
+        </h2>
+
+        <v-alert elevation="2" class="p-text" color="white">
+          <span class="min-it">MIN IT</span> is a dynamic software solutions
+          company where you can take a services like
+          <b class="min-it">
+            SOFTWARE DEVELOPMENT,SOFTWARE ARCHITECTURE, WEB DESIGN, WEB
+            DEVELOPMENT,APP DEVELOPMENT,GRAPHIC DESIGN, DIGITAL
+            MARKETING,SEO,CLOUD SERVICE,DOMAIN AND HOSTING,VIDEO ADDS,ONLINE
+            PROMOTIONS with all kind of online services</b
+          >
+          and freelancer based in Bangladesh and all over the world.
+        </v-alert>
+      </v-col>
       <v-col md="4">
         <!-- https://i.postimg.cc/63mckTY3/MIN-IT-ILLUSTRATION-WHITE.jpg -->
         <v-img
@@ -30,23 +47,7 @@
         ></v-card>
       </v-col>
       <v-col md="8">
-        <h2>
-          <b> ALL ABOUT <span class="minit-color">MIN IT</span> </b>
-        </h2>
-
-        <v-alert elevation="2" class="p-text" color="white">
-          <span class="min-it">MIN IT</span> is a dynamic software solutions
-          company where you can take a services like
-          <b class="min-it">
-            SOFTWARE DEVELOPMENT,SOFTWARE ARCHITECTURE, WEB DESIGN, WEB
-            DEVELOPMENT,APP DEVELOPMENT,GRAPHIC DESIGN, DIGITAL
-            MARKETING,SEO,CLOUD SERVICE,DOMAIN AND HOSTING,VIDEO ADDS,ONLINE
-            PROMOTIONS with all kind of online services</b
-          >
-          and freelancer based in Bangladesh and all over the world.
-        </v-alert>
-
-        <v-alert elevation="2" class="p-text mt-5" color="white">
+        <v-alert elevation="2" class="p-text mt-1" color="white">
           we have been building noteworthy software and websites for more than
           6+ years. For this time we had done all types of projects, Like
           <span class="min-it">
@@ -59,9 +60,7 @@
           tasks, iterate fast and deliver faster. If you're interested in
           working with us, don't hesitate to hire contact with us.
         </v-alert>
-      </v-col>
-      <v-col md="12">
-        <v-alert class="p-text" elevation="2" color="white">
+        <v-alert class="p-text mt-5" elevation="2" color="white">
           <b>Programming Languages and other tools that we are use in past</b
           ><br />
           Rest API ,PHP Laravel , Vue.js , Nuxt.js , Ajax , JavaScript ,
@@ -69,6 +68,8 @@
           Server ,Micro-Service,Docker,Postmant, MySQL ,Photoshop cc ,
           illustrator cc ,Figma
         </v-alert>
+      </v-col>
+      <v-col md="12">
         <v-alert class="mt-5 p-text" elevation="2" color="white">
           <b>Programming Languages and other tools that we are use in past</b
           ><br />
@@ -112,5 +113,10 @@ export default {};
   letter-spacing: 1px;
   line-height: 40px;
   padding: 15px;
+}
+.minit-title {
+  color: #242020;
+  font-size: 50px;
+  font-weight: bold;
 }
 </style>

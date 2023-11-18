@@ -26,7 +26,7 @@
                 rounded="xl"
                 color="#000"
                 class="ms-5 mt-10"
-                >Get Start with Min it</v-btn
+                >Let's Start with Min it</v-btn
               >
               <v-btn
                 size="x-large"

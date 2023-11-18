@@ -1,12 +1,13 @@
 <template>
   <v-container id="about">
     <v-row>
-      <v-col md="12">
+      <v-col cols="12">
         <h2 class="minit-title">
           <b> ALL ABOUT <span class="minit-color">MIN IT</span> </b>
         </h2>
-
-        <v-alert elevation="2" class="p-text" color="white">
+      </v-col>
+      <v-col cols="12">
+        <v-sheet elevation="2" class="p-text" color="white">
           <span class="min-it">MIN IT</span> is a dynamic software solutions
           company where you can take a services like
           <b class="min-it">
@@ -16,10 +17,11 @@
             PROMOTIONS with all kind of online services</b
           >
           and freelancer based in Bangladesh and all over the world.
-        </v-alert>
+        </v-sheet>
       </v-col>
-      <v-col md="4">
+      <v-col cols="12" md="12" sm="12" xl="6">
         <!-- https://i.postimg.cc/63mckTY3/MIN-IT-ILLUSTRATION-WHITE.jpg -->
+
         <v-img
           :src="`https://i.postimg.cc/nzYqnrFZ/MIN-IT-ILLUSTRATION-BLACK.jpg`"
           :lazy-src="`https://picsum.photos/10/6?image=${5 * 5 + 10}`"
@@ -36,18 +38,20 @@
             </v-row>
           </template>
         </v-img>
-        <v-card
-          max-width="600"
+        <!-- <v-card
+          cols="12"
+          md="6"
+          sm="12"
           title="MIN IT ON GITHUB"
           prepend-icon="mdi-github"
           append-icon="mdi-open-in-new"
           href="https://github.com/minhazulmin"
           target="_blank"
           rel="noopener"
-        ></v-card>
+        ></v-card> -->
       </v-col>
-      <v-col md="8">
-        <v-alert elevation="2" class="p-text mt-1" color="white">
+      <v-col cols="12" md="12" sm="12" xl="6">
+        <v-sheet elevation="2" class="p-text mt-1" color="white">
           we have been building noteworthy software and websites for more than
           6+ years. For this time we had done all types of projects, Like
           <span class="min-it">
@@ -59,7 +63,7 @@
           products. Having a sharp eye for product evolution helps me prioritize
           tasks, iterate fast and deliver faster. If you're interested in
           working with us, don't hesitate to hire contact with us.
-        </v-alert>
+        </v-sheet>
         <v-alert class="p-text mt-5" elevation="2" color="white">
           <b>Programming Languages and other tools that we are use in past</b
           ><br />
@@ -69,16 +73,8 @@
           illustrator cc ,Figma
         </v-alert>
       </v-col>
-      <v-col md="12">
-        <v-alert class="mt-5 p-text" elevation="2" color="white">
-          <b>Programming Languages and other tools that we are use in past</b
-          ><br />
-          Rest API ,PHP Laravel , Vue.js , Nuxt.js , Ajax , JavaScript ,
-          Bootstrap 5 , HTML 5 , CSS 3 , JQuery , Github , Gitlab , cPanel , VPS
-          Server ,Micro-Service,Docker,Postmant, MySQL ,Photoshop cc ,
-          illustrator cc ,Figma
-        </v-alert>
-        <v-alert class="mt-5 p-text" elevation="2" color="white">
+      <v-col cols="12" md="12" sm="12" xl="12">
+        <v-alert class="p-text" elevation="2" color="white">
           <b>Payment Gateway </b><br />
           Paypal,Stripe, SSL Ecommerce, Bkash ,Nogod and more.
         </v-alert>
@@ -90,10 +86,12 @@
 export default {};
 </script>
 <style scoped>
+@media only screen and (max-width: 425px) {
+  .minit-title {
+    font-size: 35px !important;
+  }
+}
 .min-it {
-  /* background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
-   */
-  /* background: -webkit-linear-gradient(315deg, #ee1f3f 25%, #ee1f3f); */
   background: -webkit-linear-gradient(315deg, #ee1f3f 25%, #041e2b);
   background-clip: text;
   -webkit-background-clip: text;

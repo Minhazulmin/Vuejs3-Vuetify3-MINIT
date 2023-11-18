@@ -2,7 +2,14 @@
   <v-container id="services" class="mt-10 mb-5">
     <h2 class="minit-title">All About Services</h2>
     <v-row>
-      <v-col v-for="(service, i) in services" :key="i" md="3">
+      <v-col
+        v-for="(service, i) in services"
+        :key="i"
+        cols="12"
+        sm="6"
+        md="4"
+        xl="3"
+      >
         <v-card :loading="loading" class="mx-auto my-12" max-width="374">
           <template v-slot:loader="{ isActive }">
             <v-progress-linear
@@ -147,6 +154,11 @@ export default {
 };
 </script>
 <style scoped>
+@media only screen and (max-width: 425px) {
+  .minit-title {
+    font-size: 35px !important;
+  }
+}
 .minit-title {
   color: #242020;
   font-size: 50px;

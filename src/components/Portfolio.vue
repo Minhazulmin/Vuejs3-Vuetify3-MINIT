@@ -10,7 +10,14 @@
       <v-window v-model="tab">
         <v-window-item v-for="n in 3" :key="n" :value="n">
           <v-row>
-            <v-col v-for="(portfolio, i) in portfolios" :key="i" md="3">
+            <v-col
+              v-for="(portfolio, i) in portfolios"
+              :key="i"
+              sm="6"
+              md="4"
+              xl="3"
+              cols="6"
+            >
               <v-img
                 :src="portfolio.image"
                 :lazy-src="`https://picsum.photos/10/6?image=${i * n * 5 + 10}`"
@@ -51,11 +58,32 @@ export default {
         image:
           "https://themeforest.img.customer.envatousercontent.com/files/410978908/03_home_02.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=1dde4a4b8d7b8ea22c3376001f9af56f",
       },
+      {
+        image:
+          "https://img.freepik.com/free-vector/hand-drawn-travel-agency-landing-page-template_23-2149362366.jpg",
+      },
+      {
+        image:
+          "https://www.uxcrush.com/wp-content/uploads/2023/06/figma-travel-landing-page-template-520x281.jpg",
+      },
+      {
+        image:
+          "https://uikitfree.com/wp-content/uploads/2020/04/Data-Storage-Website-Figma-Template-758x427.jpg",
+      },
+      {
+        image:
+          "https://themeforest.img.customer.envatousercontent.com/files/389659941/Preview+Image+Set+-+Update+v1/04_Corporate_Classic-01.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=23503c7bfdd05164755dea256533b9df",
+      },
     ],
   }),
 };
 </script>
 <style scoped>
+@media only screen and (max-width: 425px) {
+  .minit-title {
+    font-size: 35px !important;
+  }
+}
 .minit-title {
   color: #242020;
   font-size: 50px;

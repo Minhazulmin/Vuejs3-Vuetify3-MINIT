@@ -2,7 +2,7 @@
   <v-container>
     <h2 class="minit-title">Our Happy Clients</h2>
     <v-row>
-      <v-col md="5">
+      <v-col sm="12" md="6" cols="12">
         <v-list lines="three">
           <v-list-item v-for="(item, i) in items" :key="i" link>
             <template v-slot:prepend>
@@ -20,13 +20,16 @@
           </v-list-item>
         </v-list>
       </v-col>
-      <v-col md="7">
+      <v-col md="6">
         <v-row>
           <v-col
             v-for="(client, i) in clients"
             :key="i"
             class="d-flex child-flex"
-            cols="3"
+            sm="6"
+            md="4"
+            xl="3"
+            cols="6"
           >
             <v-img
               :src="client.image"
@@ -127,6 +130,11 @@ export default {
 };
 </script>
 <style scoped>
+@media only screen and (max-width: 425px) {
+  .minit-title {
+    font-size: 35px !important;
+  }
+}
 .p-text {
   font-size: 18px;
   text-align: justify;
